@@ -20,7 +20,8 @@
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"tailwindcss": "3.3.3",
-		"typescript": "5.2.2"
+		"typescript": "5.2.2",
+		"git": "2.42.0.windows.2"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^6.6.0",
