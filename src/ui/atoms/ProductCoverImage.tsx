@@ -15,7 +15,7 @@ export const ProductCoverImage = ({
 				layout="responsive"
 				width={320}
 				height={320}
-				className="object-cover object-center p-4 transition-transform hover:scale-105"
+				className=" object-cover object-center p-4 transition-transform hover:scale-105"
 			/>
 		</div>
 	);
