@@ -1,10 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+// next.config.js
+module.exports = {
 	pageExtensions: ["ts", "tsx", "mdx"],
 	experimental: {
 		typedRoutes: false,
 		mdxRs: true,
 	},
+	images: {
+		domains: ["naszsklep-api.vercel.app"],
+	},
 };
-const withMDX = require("@next/mdx")();
-module.exports = withMDX(nextConfig);

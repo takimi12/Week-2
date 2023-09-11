@@ -26,12 +26,6 @@ export default function RootLayout({
 						<li>
 							<ActiveLink href="/products">Products</ActiveLink>
 						</li>
-						<li>
-							<ActiveLink href="/test1"> Test1 </ActiveLink>
-						</li>
-						<li>
-							<ActiveLink href="/test2"> Test2 </ActiveLink>
-						</li>
 					</ul>
 				</nav>
 				<section className="mx-auto max-w-md p-12 sm:max-w-2xl sm:py-16 md:max-w-4xl lg:max-w-7xl">
