@@ -5,6 +5,9 @@ module.exports = {
 		typedRoutes: false,
 		mdxRs: true,
 	},
+	images: {
+		domains: ["naszsklep-api.vercel.app"],
+	},
 	webpack: (config) => {
 		config.module.rules.push({
 			test: /\.mdx$/,
