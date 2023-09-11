@@ -1,6 +1,5 @@
-import { notDeepEqual } from "assert";
 import { notFound } from "next/navigation";
-import { Component, ComponentType } from "react";
+import { ComponentType } from "react";
 
 export default async function StaticPage({
 	params,
