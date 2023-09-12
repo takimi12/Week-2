@@ -1,9 +1,4 @@
 "use client";
-import {
-	useParams,
-	usePathname,
-	useSearchParams,
-} from "next/navigation";
 import { ReactNode, useState } from "react";
 
 export const ProductCounter = ({
