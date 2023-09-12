@@ -19,7 +19,6 @@ export const ActiveLink = ({
 			href={href}
 			className={clsx(
 				`text-blue-500 hover:text-blue-900`,
-				isActive && `underline`,
 				isActive && `border-b-2 border-red-500`, // Dodaj styl dolnej krawędzi dla aktywnego linku
 			)}
 		>
