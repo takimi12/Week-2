@@ -1,15 +1,29 @@
+import { getProductById } from "@/api/products";
+import { ProductCoverImage } from "@/ui/atoms/ProductCoverImage";
+import { ProductListItemDescription } from "@/ui/atoms/ProductListItemDescription";
+import { SuggestedProductsList } from "@/ui/organisms/SuggestedProducts";
+import { Suspense } from "react";
+
 export default async function SingleProductPage({
 	params,
-	searchParams,
 }: {
 	params: { productId: string };
-	searchParams: { [key: string]: string | string[] };
 }) {
-	const referral = searchParams.referral.toString();
+	const product = await getProductById(params.productId);
 	return (
-		<div>
-			<h1>Product: {params.productId}</h1>
-			<p>Referral: {referral}</p>
-		</div>
+		<>
+			<article className="max-w-xs">
+				<ProductCoverImage
+					src={product.coverImage.src}
+					alt={product.coverImage.alt}
+				/>
+				<ProductListItemDescription product={product} />
+			</article>
+			<aside>
+				<Suspense fallback={"Ładowanie"}>
+					<SuggestedProductsList />
+				</Suspense>
+			</aside>
+		</>
 	);
 }

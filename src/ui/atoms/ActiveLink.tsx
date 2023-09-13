@@ -8,7 +8,7 @@ export const ActiveLink = ({
 	href,
 	children,
 }: {
-	href: string;
+	href: {};
 	children: ReactNode;
 }) => {
 	const pathname = usePathname();
@@ -19,7 +19,7 @@ export const ActiveLink = ({
 			href={href}
 			className={clsx(
 				`text-blue-500 hover:text-blue-900`,
-				isActive && `border-b-2 border-red-500`, // Dodaj styl dolnej krawędzi dla aktywnego linku
+				isActive && `border-b-2 border-red-500`,
 			)}
 		>
 			{children}
