@@ -20,7 +20,9 @@ export const getProductsList = async () => {
 	);
 	const productsResponse =
 		(await res.json()) as ProductResponseItem[];
-	const products = productsResponse.map(
+	// Ograniczenie do 20 produktów
+	const first20Products = productsResponse.slice(0, 20);
+	const products = first20Products.map(
 		productResponseItemToProductItemType,
 	);
 	return products;
