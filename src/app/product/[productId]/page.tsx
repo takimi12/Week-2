@@ -2,7 +2,20 @@ import { getProductById } from "@/api/products";
 import { ProductCoverImage } from "@/ui/atoms/ProductCoverImage";
 import { ProductListItemDescription } from "@/ui/atoms/ProductListItemDescription";
 import { SuggestedProductsList } from "@/ui/organisms/SuggestedProducts";
+import { Metadata } from "next";
 import { Suspense } from "react";
+
+export const generateMetadata = async ({
+	params,
+}: {
+	params: { productId: string };
+}): Promise<Metadata> => {
+	const product = await getProductById(params.productId);
+	return {
+		title: `${product.name} - ${product.category}`,
+		description: product.description,
+	};
+};
 
 export default async function SingleProductPage({
 	params,
@@ -12,7 +25,6 @@ export default async function SingleProductPage({
 	const product = await getProductById(params.productId);
 	return (
 		<>
-			<h1>{product.name}</h1>
 			<article className="max-w-xs">
 				<ProductCoverImage
 					src={product.coverImage.src}
