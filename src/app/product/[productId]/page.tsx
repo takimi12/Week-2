@@ -12,6 +12,7 @@ export default async function SingleProductPage({
 	const product = await getProductById(params.productId);
 	return (
 		<>
+			<h1>{product.name}</h1>
 			<article className="max-w-xs">
 				<ProductCoverImage
 					src={product.coverImage.src}
