@@ -14,6 +14,11 @@ export const generateMetadata = async ({
 	return {
 		title: `${product.name} - ${product.category}`,
 		description: product.description,
+		openGraph: {
+			title: `${product.name} - ${product.category}`,
+			description: product.description,
+			images: [product.coverImage.src],
+		},
 	};
 };
 
