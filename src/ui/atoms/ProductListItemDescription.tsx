@@ -6,7 +6,7 @@ type ProductListItemDescriptionProps = {
 };
 
 export const ProductListItemDescription = ({
-	product: { category, name, price },
+	product: { category, description, name, price },
 }: ProductListItemDescriptionProps) => {
 	return (
 		<>
@@ -15,6 +15,10 @@ export const ProductListItemDescription = ({
 					<h1 className="text-sm font-semibold text-gray-700">
 						{name}
 					</h1>
+					<p className="mt-1 text-sm text-gray-500">
+						<span className="sr-only">Kategoria</span>
+						{description}
+					</p>
 					<p className="mt-1 text-sm text-gray-500">
 						<span className="sr-only">Kategoria</span>
 						{category}
