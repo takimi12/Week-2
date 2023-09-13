@@ -7,6 +7,8 @@ const products: ProductItemType[] = [
 		category: "Accessories",
 		name: "Basic Tee",
 		price: 2137,
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.",
 		coverImage: {
 			alt: "",
 			src: "/product1.jpg",
@@ -17,6 +19,8 @@ const products: ProductItemType[] = [
 		category: "Accessories",
 		name: "Basic Tee",
 		price: 2137,
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.",
 		coverImage: {
 			alt: "",
 			src: "/product2.jpg",
@@ -27,6 +31,8 @@ const products: ProductItemType[] = [
 		category: "Accessories",
 		name: "Basic Tee",
 		price: 2137,
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.",
 		coverImage: {
 			alt: "",
 			src: "/product3.jpg",
@@ -36,6 +42,8 @@ const products: ProductItemType[] = [
 		id: "4",
 		category: "Accessories",
 		name: "Basic Tee",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.",
 		price: 2137,
 		coverImage: {
 			alt: "",
