@@ -5,6 +5,15 @@ import { SuggestedProductsList } from "@/ui/organisms/SuggestedProducts";
 import { Metadata } from "next";
 import { Suspense } from "react";
 
+// export const generateStaticParams = async () => {
+// 	const products = await getProductsList();
+// 	return products
+// 		.map((product) => ({
+// 			productId: product.id,
+// 		}))
+// 		.slice(0, 2);
+// };
+
 export const generateMetadata = async ({
 	params,
 }: {
